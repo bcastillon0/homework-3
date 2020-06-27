@@ -1,4 +1,5 @@
 //GETTING VARIABLES SET 
+//USING SPLIT("") SEPERATES BY CHARACTER
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var upperCaseArr = upperCase.split("");
 var lowerCase = "abcdefghijklmnopqrstuvwxyz";
@@ -19,9 +20,8 @@ function generatePassword(){
     if(passwordLength <8 || passwordLength > 128){
       alert("Keep it between 8 and 128 next time");
     }
-    
+
     //RETRIEVING PASSWORD PARAMETERS FROM THE USER  
-    //Using Array push to add the confirmed parameters to the overall list
     //USING ARRAY PUSH TO ADD THE CONFIRMED PARAMETERS TO THE PASSWORD TOTAL INPUT
     //IDEA OF UTILIZING ARRAY PUSH WAS FROM SEEING A GENERATOR USING LOWER CASED CHARACTERS AND NUMBERS
     else{
